@@ -13,6 +13,10 @@ body {
   color: #444444;
 }
 
+.comming-soon{
+  filter: grayscale(100);
+}
+
 a {
   color: #47b2e4;
   text-decoration: none;
@@ -576,6 +580,7 @@ section {
   padding: 15px 0;
   filter: grayscale(100);
 }
+
 
 .cliens img:hover {
   filter: none;
