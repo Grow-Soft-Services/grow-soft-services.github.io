@@ -1,7 +1,7 @@
-const BASE_URL = "http://34.67.134.26:8080";
+const BASE_URL = "http://growsoft.services:8080";
 // ...
 
-function submitSendMessage () {
+function submitSendMessage() {
   var name_ = document.getElementById("name").value;
   var email_ = document.getElementById("email").value;
   var message_ = document.getElementById("message").value;
@@ -14,22 +14,25 @@ function submitSendMessage () {
   };
   // alert(` ${object.name} \n${object.email}\n${object.message}\n${object.subject}`)
   try {
-    const response =  axios.post(`${BASE_URL}/send-message/mail`, object);
+    const response = axios.post(`${BASE_URL}/send-message/mail`, object);
     const data = response.data;
 
-  //  alert(`sent a mail message \nand here is the response:\n${data}`)
+    //  alert(`sent a mail message \nand here is the response:\n${data}`)
 
     return data;
   } catch (errors) {
     console.error(errors);
   }
-};
+}
 // document.getElementById ("submitBtn").addEventListener ("click", function(){
 //   submitSendMessage()
 // }, true);
 
-document.getElementById ("msgForm").addEventListener (("submit"),(e) => {
-  // e.preventDefault()
-  submitSendMessage()
-}
-,true);
+document.getElementById("msgForm").addEventListener(
+  "submit",
+  (e) => {
+    // e.preventDefault()
+    submitSendMessage();
+  },
+  true
+);
