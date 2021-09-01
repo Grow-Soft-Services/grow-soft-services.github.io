@@ -31,7 +31,7 @@ function submitSendMessage() {
 document.getElementById("msgForm").addEventListener(
   "submit",
   (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     submitSendMessage();
   },
   true
