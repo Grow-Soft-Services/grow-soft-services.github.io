@@ -1152,17 +1152,14 @@ function submitSendMessage() {
   try {
     const response = axios.post(`${BASE_URL}/send-message/mail`, object);
     const data = response.data;
-    alert(`${BASE_URL}/send-message/mail`)
     //  alert(`sent a mail message \nand here is the response:\n${data}`)
 
     return data;
   } catch (errors) {
     console.error(errors);
-    alert(errors)
   }
 }
 
-console.log("woa")
 document.getElementById ("submitBtn").addEventListener ("click", function(){
   submitSendMessage()
 }, true);
