@@ -25,9 +25,11 @@ function submitSendMessage() {
     alert(errors)
   }
 }
-// document.getElementById ("submitBtn").addEventListener ("click", function(){
-//   submitSendMessage()
-// }, true);
+
+console.log("woa")
+document.getElementById ("submitBtn").addEventListener ("click", function(){
+  submitSendMessage()
+}, true);
 
 document.getElementById("msgForm").addEventListener(
   "submit",
