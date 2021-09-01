@@ -1,4 +1,4 @@
-const BASE_URL = "https://growsoft.services/api";
+const BASE_URL = "https://growsoft.services/api/";
 // ...
 
 function submitSendMessage() {
