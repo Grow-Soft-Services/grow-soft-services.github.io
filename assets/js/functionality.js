@@ -1,4 +1,4 @@
-const BASE_URL = "https://localhost:8080/";
+const BASE_URL = "https://growsoft.services/api";
 // ...
 
 function submitSendMessage() {
@@ -16,12 +16,13 @@ function submitSendMessage() {
   try {
     const response = axios.post(`${BASE_URL}/send-message/mail`, object);
     const data = response.data;
-
+    alert(`${BASE_URL}/send-message/mail`)
     //  alert(`sent a mail message \nand here is the response:\n${data}`)
 
     return data;
   } catch (errors) {
     console.error(errors);
+    alert(errors)
   }
 }
 // document.getElementById ("submitBtn").addEventListener ("click", function(){
