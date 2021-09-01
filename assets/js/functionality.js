@@ -1,4 +1,4 @@
-const BASE_URL = "https://growsoft.services/api";
+const BASE_URL = "https://localhost:8080/";
 // ...
 
 function submitSendMessage() {
@@ -31,7 +31,7 @@ function submitSendMessage() {
 document.getElementById("msgForm").addEventListener(
   "submit",
   (e) => {
-    e.preventDefault()
+    e.preventDefault();
     submitSendMessage();
   },
   true
