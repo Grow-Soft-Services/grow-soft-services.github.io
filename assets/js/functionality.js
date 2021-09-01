@@ -1,4 +1,4 @@
-const BASE_URL = "http://growsoft.services:8080";
+const BASE_URL = "https://growsoft.services:8080";
 // ...
 
 function submitSendMessage() {
